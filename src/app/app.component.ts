@@ -50,7 +50,7 @@ export class AppComponent {
   selectedOption = 3;
 
   //ngStyle
-  color = 'green';
+  color = '#ff1493';
 
   //ngClass
   isBold = true;
@@ -58,4 +58,8 @@ export class AppComponent {
 
   //ngModel
   ngmyname = '';
+  value1 = '';
+  value2 = '';
+  Number = Number;
+  sum = '';
 }

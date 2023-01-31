@@ -59,3 +59,15 @@
 
 <input [(ngModel)]="ngmyname" />
 <p>Hello {{ ngmyname }}!</p>
+
+<div class="container">
+  <h1>Add the two values</h1>
+
+  <input [(ngModel)]="value1" />
+  <p>Hello {{ value1 }}!</p>
+
+  <input [(ngModel)]="value2" />
+  <p>Hello {{ value2 }}!</p>
+
+  <p>= {{ Number(value1) + Number(value2) }}</p>
+</div>
