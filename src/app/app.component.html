@@ -1,0 +1,61 @@
+<!--<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p> -->
+
+{{ appName }}
+
+<input type="text" [value]="clientName" />
+
+<p [style.color]="myColor">Text Color is styled using style bind</p>
+
+<p [class]="appliedCSSClass">Text Color is applied the myClass property</p>
+
+<p [class.blue]="notappliedCSSClass">
+  Text Color is applied the myClass property
+</p>
+
+<!-- Two-way data binding -->
+<input [(ngModel)]="myName" placeholder="Enter your name" />
+<p>Hello, {{ myName }} !!</p>
+
+<button (click)="onButtonClick()">Click Me</button>
+
+<p *ngIf="message">{{ message }}</p>
+
+<button (click)="showAlert()">Click Me</button>
+
+<h2>Event Binding</h2>
+<button (click)="showData($event)">Click here</button>
+
+<!-- ngIf Directive -->
+<ng-template [ngIf]="showElement">
+  <p>This element is displayed if showElement is true</p>
+</ng-template>
+
+<!-- ngFor Directive -->
+
+<ol>
+  <li *ngFor="let item of items">{{ item }}</li>
+</ol>
+
+<!-- ngSwitch Directive -->
+
+<ng-container [ngSwitch]="selectedOption">
+  <p *ngSwitchCase="1">Option 1 is selected</p>
+  <p *ngSwitchCase="2">Option 2 is selected</p>
+  <p *ngSwitchDefault>No option is selected</p>
+</ng-container>
+
+<!-- ngStyle Directive -->
+
+<p [ngStyle]="{ color: color }">This text is dynamically colored</p>
+
+<!-- ngClass Directive -->
+
+<p [ngClass]="{ bold: isBold, italic: isItalic }">
+  This text is dynamically styled
+</p>
+
+<!-- ngModel Directive -->
+
+<input [(ngModel)]="ngmyname" />
+<p>Hello {{ ngmyname }}!</p>
